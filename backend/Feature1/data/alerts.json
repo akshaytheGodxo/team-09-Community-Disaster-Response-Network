@@ -1,0 +1,16 @@
+[
+  {
+    "reporter_id": "Rupam",
+    "classification": "disaster_type: fire  \nseverity: high  \nlocation: govardhan chauraha, mathura  \nnumber_of_people: unknown  \nsummary: A house fire is occurring at govardhan chauraha in Mathura.",
+    "authenticity": "authenticity: likely_real  \nconfidence: 0.8  \nreasons:  \n- The report specifies a specific location (Govardhan Chauraha, Mathura) and describes a common type of emergency (house fire), which adds to its credibility.  \n- The severity is classified as high, indicating a serious situation that would likely attract attention and reporting from local authorities or news outlets.",
+    "response": "user_message: A house fire is currently happening at Govardhan Chauraha in Mathura. Immediate assistance is required to ensure the safety of the residents and to control the fire.  \nrecommended_actions:\n- Dispatch fire response teams to the location immediately.\n- Alert local emergency services and hospitals for potential injuries.\n- Evacuate nearby buildings to ensure the safety of residents in the vicinity.  \nnotify_admin: true",
+    "admin_alert": "admin_alert: Immediate assistance required for a house fire at Govardhan Chauraha, Mathura.  \npriority: high  \nsend_dashboard_alert: true"
+  },
+  {
+    "reporter_id": "Saksham",
+    "classification": "disaster_type: medical  \nseverity: high  \nlocation: unknown  \nnumber_of_people: unknown  \nsummary: The individual is in a critical medical situation.",
+    "authenticity": "authenticity: likely_real  \nconfidence: 0.8  \nreasons:  \n- The description indicates a critical medical situation, which is often reported in real-time scenarios.  \n- The lack of specific details about location and number of people does not inherently indicate misinformation, as urgent medical situations can often be reported without complete information.",
+    "response": "user_message: An individual is in a critical medical situation and requires immediate assistance.  \nrecommended_actions:  \n- Call emergency medical services (EMS) immediately.  \n- Provide first aid if trained and safe to do so.  \n- Gather any available information about the individual's condition to relay to EMS.  \nnotify_admin: true",
+    "admin_alert": "admin_alert: Immediate medical assistance required for an individual in critical condition.  \npriority: high  \nsend_dashboard_alert: true"
+  }
+]
