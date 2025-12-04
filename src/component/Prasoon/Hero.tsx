@@ -26,11 +26,6 @@ export default function LandingPage() {
                     </div>
                 </div>
 
-                <img
-                    src="/disaster.svg"
-                    alt="Disaster Response"
-                    className="w-full md:w-1/2 mt-10 md:mt-0"
-                />
             </section>
 
             {/* Phases */}
