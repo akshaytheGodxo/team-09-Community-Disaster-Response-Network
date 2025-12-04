@@ -53,4 +53,14 @@ Working prototype demonstrates:
 
 ---
 ![WhatsApp Image 2025-12-04 at 12 17 11_69ad24b7](https://github.com/user-attachments/assets/7edeb91b-9f25-495a-8939-938797fabded)
+ScreenShot of Website: 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91b62273-ae75-49c5-a79c-114bae07b2e0" />
+ScreenShot of Main Dashboard: 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f0cf1655-3634-4a3d-b7e3-fe6a265e5ab2" />
+ScreenShot of Auth
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2b491eb7-2c0c-473e-9cc9-7ee3a67bedcd" />
 
+Environment Variables for Supabase authentication:
+DB_PASS=N2Jaci5WzwKPf373
+NEXT_PUBLIC_SUPABASE_URL=https://viehaewdrneampysxkhc.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZpZWhhZXdkcm5lYW1weXN4a2hjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ4MjE2OTUsImV4cCI6MjA4MDM5NzY5NX0.DKbgzuFRZo7rgANgTqjBCme8MmXJUtq-owwFSnf2Ngk
