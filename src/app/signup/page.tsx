@@ -9,16 +9,24 @@ function Signup() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [role, setRole] = useState<"user" | "admin">("user");
-  const [gender, setGender] = useState<"male" | "female" | "other">("other");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "http://localhost:8080/api/auth/register",
-        { name, email, password, role, gender },
-        { withCredentials: true }
-      );
+
+      const res = await fetch("/api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, password, role })
+      })
+
+      const data = await res.json();
+      console.log(data);
+      if (!res.ok) {
+        throw new Error(data.error || "Signup failed!");
+      }
 
       alert("Account created successfully! Please login.");
       window.location.href = "/login";
@@ -36,7 +44,7 @@ function Signup() {
           Community Disaster Response Network
         </h2>
 
-        <div className="flex justify-center mt-6 gap-4">
+        <div className="flex justify-center mt-6 gap-4 text-black">
           <Link
             href="/login"
             className="px-4 py-2 rounded-lg bg-gray-300 text-gray-900 font-semibold"
@@ -65,6 +73,7 @@ function Signup() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              name="name"
             />
           </div>
 
@@ -77,6 +86,7 @@ function Signup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              name="email"
             />
           </div>
 
@@ -89,6 +99,7 @@ function Signup() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              name="password"
             />
           </div>
 
@@ -98,6 +109,7 @@ function Signup() {
               value={role}
               onChange={(e) => setRole(e.target.value as "user" | "admin")}
               className="w-full mt-1 p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              name="role"
             >
               <option value="user">User</option>
               <option value="admin">Admin</option>

@@ -15,17 +15,19 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "http://localhost:8080/api/auth/login",
-        { email, password },
-        { withCredentials: true }
-      );
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
+      const data = await res.json();
+      console.log(data);
       alert("Login successful!");
-      localStorage.setItem("user", JSON.stringify(res.data.user));
-      localStorage.setItem("userId", res.data.user._id);
-
-      router.push("/dashboard");
+      console.log()
+      router.push("/");
     } catch (err: any) {
       alert(err.response?.data?.message || "Login failed!");
     }
@@ -69,6 +71,7 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              name="email"
             />
           </div>
 
@@ -81,6 +84,7 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              name="password"
             />
           </div>
 
