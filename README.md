@@ -60,3 +60,7 @@ ScreenShot of Main Dashboard:
 ScreenShot of Auth
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2b491eb7-2c0c-473e-9cc9-7ee3a67bedcd" />
 
+Environment Variables for Supabase authentication:
+DB_PASS=N2Jaci5WzwKPf373
+NEXT_PUBLIC_SUPABASE_URL=https://viehaewdrneampysxkhc.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZpZWhhZXdkcm5lYW1weXN4a2hjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ4MjE2OTUsImV4cCI6MjA4MDM5NzY5NX0.DKbgzuFRZo7rgANgTqjBCme8MmXJUtq-owwFSnf2Ngk
